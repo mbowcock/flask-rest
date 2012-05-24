@@ -7,8 +7,8 @@ def api_root():
     return 'App Root'
 
 @app.route('/resources')
-def api_resource():
-    return 'List of '.format(url_for('api_resource'))
+def api_resources():
+    return 'List of {0}'.format(url_for('api_resources'))
 
 @app.route('/resource/<resourceid>')
 def api_resource(resourceid):
